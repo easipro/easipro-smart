@@ -32,17 +32,20 @@ This is a demonstration of SMART-on-FHIR applications using the standalone launc
 ### Step5. SMART & AssessmentCenter settings
 
 1. Open `AppDelegate` of the Apps (EASIPRO-Clinic)
-2. Change `settings` as per the FHIR Server, protected servers are also supported
+2. Change `settings` as per the FHIR Server, protected servers are also supported.
+3. Create a AssessmentCenter Client with endpoint, access identifier, access token
 ```swift
 let settings = [
-            "client_name"   : "easipro-clinic",
-            "client_id"     : "app-client-id",
-            "redirect"      : "easipro-clinic://smartcallback",
-            "scope"         : "openid profile user/*.* launch"
-        ]
-```
-3. Create a AssessmentCenter Client with endpoint, access identifier, access token
-```
+    "client_name"   : "easipro-clinic",
+    "client_id"     : "app-client-id",
+    "redirect"      : "easipro-clinic://smartcallback",
+    "scope"         : "openid profile user/*.* launch"
+]
+
+let smart_baseURL = URL(string: "https://r4.smarthealthit.org")!
+
+SMARTClient.shared.smart_settings = settings
+SMARTClient.shared.smart_endpoint = smart_baseURL
 SMARTClient.shared.acClient = ACClient(baseURL: URL(string: "https://www.assessmentcenter.net/ac_api/2014-01/")!, accessIdentifier: "<# - AC Access Identifier - #>", token: "<# - AC Token - #>")
 ```
 ### Step6. Build and Run EASIPRO-Clinic! 
