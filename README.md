@@ -16,30 +16,28 @@ AssessmentCenter swift framework includes client libraries and generation of [Qu
 2. `git clone --recursive https://github.com/chb/easipro-smart.git`
 3. Make sure submodules [ResearchKit](http://researchkit.org) and [Swift-SMART](http://github.com/smart-on-fhir/swift-smart.git) are downloaded.
 
-<<<<<<< HEAD
-### Step2. Open `EASIPRO.xworkspace` in Xcode and add the following xcodeproject files if not there already.
-=======
-#### Step2. Open `EASIPRO.xworkspace` in Xcode
->>>>>>> 3ff2170127c9f35d979953fc22da465875cb5ae1
+#### Step2. Open `EASIPRO.xworkspace` in Xcode and add the following xcodeproject files if not there already.
 
 1.  `SwiftSMART.xcodeproj`
 2.  `AssessmentCenter.xcodeproj`
 3.  `ResearchKit.xcodeproj`
 4.  `EASIPRO-Clinic.xcodeproj`
+5.  `EASIPRO-Home.xcodeproj`
 
 #### Step3. Build and Compile submodules (SwiftSMART, AssessmentCenter, ResearchKit)
 
-#### Step4. View General Tab for EASIPRO-Clinic project
+#### Step4. Build setting for the apps: 
 
-1. Select Target- `EASIPRO-Clinic`
-2. Find **Embedded Binaries** section and **Add** compiled frameworks
+1. View General Tab for EASIPRO-Clinic project or EASIPRO-Home project
+2. Select Target- `EASIPRO-Clinic` or `EASIPRO-Home`
+3. Find **Embedded Binaries** section and **Add** compiled frameworks
     - `SMART.frameworkiOS`
     - `AssessmentCenter.frameworkiOS`
     - `ResearchKit.frameworkiOS`
 
 #### Step5. SMART & AssessmentCenter settings
 
-1. Open `AppDelegate` of the Apps (EASIPRO-Clinic)
+1. Open `AppDelegate` of the Apps (EASIPRO-Clinic or EASIPRO-Home)
 2. Change `settings` as per the FHIR Server, protected servers are also supported.
 3. Create a AssessmentCenter Client with endpoint, access identifier, access token
 ```swift
@@ -56,7 +54,7 @@ SMARTClient.shared.smart_settings = settings
 SMARTClient.shared.smart_endpoint = smart_baseURL
 SMARTClient.shared.acClient = ACClient(baseURL: URL(string: "https://www.assessmentcenter.net/ac_api/2014-01/")!, accessIdentifier: "<# - AC Access Identifier - #>", token: "<# - AC Token - #>")
 ```
-#### Step6. Build and Run EASIPRO-Clinic! 
+#### Step6. Build and Run EASIPRO-Clinic/EASIPRO-Home! 
 
 --------
 
