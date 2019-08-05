@@ -12,12 +12,12 @@ This is a demonstration of SMART-on-FHIR applications using the standalone launc
 2. `git clone --recursive https://github.com/chb/easipro-smart.git`
 3. Make sure submodules [ResearchKit](http://researchkit.org) and [Swift-SMART](http://github.com/smart-on-fhir/swift-smart.git) are downloaded.
 
-### Step2. Open `EASIPRO.xworkspace` in Xcode
+### Step2. Open `EASIPRO.xworkspace` in Xcode and add the following xcodeproject files if not there already.
 
-1. Add `SwiftSMART.xcodeproj`
-2. Add `AssessmentCenter.xcodeproj`
-3. Add `ResearchKit.xcodeproj`
-4. Add `EASIPRO-Clinic.xcodeproj`
+1.  `SwiftSMART.xcodeproj`
+2.  `AssessmentCenter.xcodeproj`
+3.  `ResearchKit.xcodeproj`
+4.  `EASIPRO-Clinic.xcodeproj`
 
 ### Step3. Build and Compile submodules (SwiftSMART, AssessmentCenter, ResearchKit)
 

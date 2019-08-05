@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:EASIPRO-Home/../LICENSE">
+   </FileRef>
+   <FileRef
+      location = "group:EASIPRO-Home/../README.md">
+   </FileRef>
+   <FileRef
+      location = "group:EASIPRO-Home/EASIPRO-Home.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:researchkit/ResearchKit.xcodeproj">
    </FileRef>
    <FileRef

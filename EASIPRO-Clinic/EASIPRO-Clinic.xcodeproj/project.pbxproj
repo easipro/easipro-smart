@@ -19,6 +19,7 @@
 		D4221BD322F4789100A8FC52 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4221BD222F4789100A8FC52 /* ReportViewController.swift */; };
 		D4221BDC22F48BCF00A8FC52 /* SessionActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4221BDA22F48BCF00A8FC52 /* SessionActionView.xib */; };
 		D4221BDD22F48BCF00A8FC52 /* SessionActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4221BDB22F48BCF00A8FC52 /* SessionActionView.swift */; };
+		D4221C1222F889CD00A8FC52 /* PROMISViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4221C1122F889CD00A8FC52 /* PROMISViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D4221BD222F4789100A8FC52 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		D4221BDA22F48BCF00A8FC52 /* SessionActionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SessionActionView.xib; sourceTree = "<group>"; };
 		D4221BDB22F48BCF00A8FC52 /* SessionActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionActionView.swift; sourceTree = "<group>"; };
+		D4221C1122F889CD00A8FC52 /* PROMISViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PROMISViewController.swift; path = "../../EASIPRO-Home/EASIPRO-Home/PROMISViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		D4221BAB22F3226600A8FC52 = {
 			isa = PBXGroup;
 			children = (
+				D4221C1022F8849C00A8FC52 /* Common */,
 				D4221BB622F3226600A8FC52 /* EASIPRO-Clinic */,
 				D4221BB522F3226600A8FC52 /* Products */,
 			);
@@ -72,17 +75,25 @@
 				D4221BDA22F48BCF00A8FC52 /* SessionActionView.xib */,
 				D4221BB722F3226600A8FC52 /* AppDelegate.swift */,
 				D4221BB922F3226600A8FC52 /* MasterViewController.swift */,
+				D4221C1122F889CD00A8FC52 /* PROMISViewController.swift */,
 				D4221BBB22F3226600A8FC52 /* DetailViewController.swift */,
 				D4221BBD22F3226600A8FC52 /* Main.storyboard */,
 				D4221BC022F3226C00A8FC52 /* Assets.xcassets */,
 				D4221BC222F3226C00A8FC52 /* LaunchScreen.storyboard */,
 				D4221BC522F3226C00A8FC52 /* Info.plist */,
+			);
+			path = "EASIPRO-Clinic";
+			sourceTree = "<group>";
+		};
+		D4221C1022F8849C00A8FC52 /* Common */ = {
+			isa = PBXGroup;
+			children = (
 				D4221BCC22F326A300A8FC52 /* SMARTClient.swift */,
 				D4221BD022F32F2000A8FC52 /* SMARTLoginController.swift */,
 				D4221BCE22F329C300A8FC52 /* Extensions.swift */,
 				D4221BD222F4789100A8FC52 /* ReportViewController.swift */,
 			);
-			path = "EASIPRO-Clinic";
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				D4221BCD22F326A300A8FC52 /* SMARTClient.swift in Sources */,
 				D4221BB822F3226600A8FC52 /* AppDelegate.swift in Sources */,
 				D4221BD122F32F2000A8FC52 /* SMARTLoginController.swift in Sources */,
+				D4221C1222F889CD00A8FC52 /* PROMISViewController.swift in Sources */,
 				D4221BD322F4789100A8FC52 /* ReportViewController.swift in Sources */,
 				D4221BDD22F48BCF00A8FC52 /* SessionActionView.swift in Sources */,
 			);
