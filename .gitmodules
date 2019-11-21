@@ -1,9 +1,3 @@
-[submodule "researchkit"]
-	path = researchkit
-	url = https://github.com/researchkit/researchkit.git
-[submodule "Swift-SMART"]
-	path = Swift-SMART
-	url = https://github.com/smart-on-fhir/Swift-SMART.git
 [submodule "Lib/SMARTMarkers"]
 	path = Lib/SMARTMarkers
 	url = https://github.com/smartmarkers/smartmarkers-ios
